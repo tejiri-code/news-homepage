@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+
+body{
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+  margin-left: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Inter';
+  src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.navbar{
+  margin: 100px 100px 50px 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar img{
+  margin-right: 700px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar a{
+  margin-right: 50px;
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+}
+
+.navbar a:hover{
+  color: hsl(5, 85%, 63%);
+}
+
+.toggle-button{
+  display: none;
+}
+
+.bright-future-container{
+  display: flex;
+}
+
+.bright-future{
+  width: 300px;
+  margin-right: 150px;
+}
+
+.bright-future h1{
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.dive-into{
+  width: 400px;
+  margin-top: 20px;
+}
+
+.dive-into p{
+  color: hsl(236, 13%, 42%);
+  font-size: 17px;
+}
+
+.read-more{
+  background-color: hsl(5, 85%, 63%);
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-top: 30px;
+}
+
+.read-more:hover{
+  background-color: #000;
+}
+#image-desktop{
+  width: 47.7%;
+  grid-area: desktop-image;
+}
+.image-desktop{
+  width: 820px;
+}
+
+.new{
+  background-color: #000;
+  color: #fff;
+  width: 300px;
+  padding: 20px 25px;
+  position: absolute;
+  top: 200px;
+  left: 1200px;
+}
+
+.new h1{
+  color:  hsl(35, 77%, 62%);
+}
+
+.new-content hr{
+  color: hsl(233, 8%, 79%);
+}
+
+.new-content h3:hover{
+  color: hsl(35, 77%, 62%);
+}
+.new-content p{
+  color: hsl(233, 8%, 79%);
+  margin-bottom: 40px;
+}
+
+
+
+.reviveee{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 1580px;
+}
+
+.reviving-flex{
+  width: 28.5%
+}
+.reviving-flex img{
+  height: 180px;
+  float: left;
+  margin-right: 10px;
+}
+
+.reviving-flex-text{
+  width: 400px;
+}
+.reviving-flex-text h1{
+  color: hsl(233, 8%, 79%);
+}
+
+.reviving-flex-text h3{
+  font-weight: 800;
+}
+
+.reviving-flex-text h3:hover{
+  color: hsl(5, 85%, 63%);
+}
+
+.reviving-flex-text p{
+  color:  hsl(236, 13%, 42%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  body{
+    margin: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar a{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .toggle-button{
+    display: block;
+    transform: translateY(-50%);
+    position: absolute;
+
+  }
+
+  .image-desktop{
+    src: url(images/image-web-3-mobile.jpg);
+    width: 300px;
+    height: 200px;
+  }
+
+  .bright-future-container{
+    display: block;
+  }
+
+  .bright-future{
+    width: 350px;
+  }
+
+  .bright-future h1{
+    font-size: 45px;
+  }
+
+  .dive-into{
+    width: 310px;
+  }
+
+  .dive-into p{
+    font-size: 15px;
+  }
+
+  .new{
+    width: 270px;
+    padding: 10px;
+    position: static;
+    margin-top: 30px;
+  }
+
+  .reviveee{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviving-flex{
+    margin-bottom: 20px;
+    width: 200px
+  }
+
+  .reviving-flex img{
+    width: 100px;
+    height: 150px;
+  }
+
+  .reviving-flex-text{
+    width: 350px;
   }
 }
