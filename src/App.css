@@ -16,19 +16,22 @@ body{
   width: 100;
 }
 
-.navbar img{
-  margin-right: 700px;
+.navbar-content{
+  margin-left: 700px;
+  margin-top: -20px;
 }
 
-.navbar a{
+.navbar-content a{
   margin-right: 50px;
   color: hsl(236, 13%, 42%);
   font-weight: 400;
+  text-decoration: none;
 }
 
 .navbar a:hover{
   color: hsl(5, 85%, 63%);
 }
+
 
 .toggle-button{
   display: none;
@@ -145,6 +148,7 @@ body{
 @media screen and (min-width: 320px) and (max-width: 600px) {
   body{
     margin: 20px;
+    margin-left: 50px;
   }
   .navbar a{
     display: none;
@@ -159,15 +163,14 @@ body{
 
   .toggle-button{
     display: block;
-    transform: translateY(-50%);
-    position: absolute;
-
+    margin-top: -30px;
+    margin-left: 350px;
   }
 
   .image-desktop{
     src: url(images/image-web-3-mobile.jpg);
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
   }
 
   .bright-future-container{
@@ -214,5 +217,41 @@ body{
 
   .reviving-flex-text{
     width: 350px;
+  }
+
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+
+  .dropdown-menu{
+    background-color: #fff;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .dropdown-menu img{
+    margin-left: 250px;
+  }
+
+  .dropdown-menu ul{
+    padding-top: 100px;
+  }
+
+  .dropdown-menu li{
+    list-style: none;
+    margin-bottom: 50px;
+    font-weight: 700;
   }
 }
