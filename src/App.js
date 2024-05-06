@@ -1,16 +1,14 @@
 import './App.css'
 import React from 'react'
-import Navbar from './Components/Navbar'
-import { ItemsGrid } from './Components/ItemsGrid'
-import Reviving from './Components/Reviving'
+import Main from './Components/Main'
+
+import {Routes, Route} from "react-router-dom"
 
 export const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <ItemsGrid></ItemsGrid>
-      <Reviving/>
-    </div>
+    <Routes>
+   <Route path="/" element={<Main/>}/>
+    </Routes>
   )
 }
 
